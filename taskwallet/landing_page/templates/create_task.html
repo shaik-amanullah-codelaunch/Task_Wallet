@@ -1,0 +1,15 @@
+<!-- landing_page/templates/landing_page/create_task.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+</head>
+<body>
+    <h1>Create a New Task</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Task</button>
+    </form>
+</body>
+</html>
